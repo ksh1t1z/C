@@ -5,13 +5,13 @@ int main()
     i = 1;
     b = 1;
     a = 0;
-    c = 0;
+    c = 1;
     do
     {
         printf("%d ", a);
-        a = b + c;
+        c =a + b;
+        a = b;
         b = c;
-        c = a;
         ++i;
     } while (i <= 20);
 }
