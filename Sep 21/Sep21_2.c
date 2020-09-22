@@ -5,11 +5,10 @@ int main()
     i = 1;
     b = 1;
     a = 0;
-    c = 0;
-    printf("%d ", 0);
+    c = 1;
     while (i <= 20)
     {
-        printf("%d ", b);
+        printf("%d ", a);
         c = a + b;
         a = b;
         b = c;
