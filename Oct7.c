@@ -31,19 +31,15 @@ int main()
     for (int i = 1; i <= n; i += 4)
     {
         xin1 = xin1 + pow(x, a[i]) / fact(a[i]);
-        printf("Xin1 %f %d\n", xin1, i);
     }
-    printf("Here %.2f\n", xin1);
     for (int j = 3; j <= n; j += 4)
     {
         b[j] = j;
     }
     for (int j = 3; j <= n; j += 4)
     {
-        xin2 = xin2 + pow(x, b[j]) / fact(b[j]); 
-        printf("Xin here %f %d\n", xin2, j * -1);
+        xin2 = xin2 + pow(x, b[j]) / fact(b[j]);
     }
-    printf("\nAnd here %.2f", xin2);
     xin = xin1 + (xin2 * -1); // for 2^n element being neagtive, indexing from 1
-    printf("\nThe sine value is %.2f", xin);
+    printf("The sine value is %.2f\n", xin);
 }
