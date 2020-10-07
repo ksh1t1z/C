@@ -44,6 +44,6 @@ int main()
         printf("Xin here %f %d\n", xin2, j * -1);
     }
     printf("\nAnd here %.2f", xin2);
-    xin = xin1 + (xin2 * -1); // for 2^n element being neagtive, indxeing from 1
+    xin = xin1 + (xin2 * -1); // for 2^n element being neagtive, indexing from 1
     printf("\nThe sine value is %.2f", xin);
 }
